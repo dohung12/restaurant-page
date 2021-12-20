@@ -1,4 +1,4 @@
-import ContactImg from "./images/contact-img.jpg";
+import ContactImg from "./images/contact-img.jpeg";
 
 function createContactPage(brandName) {
   const phoneNumber = "(423) 542-6976";
