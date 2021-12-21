@@ -49,6 +49,7 @@ function createMenu() {
   function createCourse(course, meal) {
     const courseName = document.createElement("h4");
     courseName.textContent = course;
+
     const mealName = document.createElement("p");
     mealName.textContent = meal;
 

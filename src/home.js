@@ -1,17 +1,17 @@
 import homePageImg from "./images/homepage-img.jpeg";
 
 function createHomePage(brandName) {
-  const intro = `${brandName} is ranked #19 in "50 Must Try Restaurant in Atlantic"`;
+  const intro = `${brandName} is ranked #19 in "50 Must Try Restaurant in Atlantis"`;
 
-  let homePage = document.createElement("div");
+  const homePage = document.createElement("div");
   homePage.setAttribute("class", "container home");
 
-  let img = document.createElement("img");
+  const img = document.createElement("img");
   img.src = homePageImg;
 
-  let header = document.createElement("div");
-  let headerText = document.createElement("h1");
-  let headerIntro = document.createElement("p");
+  const header = document.createElement("div");
+  const headerText = document.createElement("h1");
+  const headerIntro = document.createElement("p");
 
   headerText.innerText = brandName;
   headerText.classList.add("header-text");

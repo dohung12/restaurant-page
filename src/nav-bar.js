@@ -1,5 +1,5 @@
 function createNavElement(brandName, navPages) {
-  let nav = document.createElement("nav");
+  const nav = document.createElement("nav");
 
   nav.classList.add("navbar");
 
@@ -13,7 +13,7 @@ function createNavElement(brandName, navPages) {
 }
 
 function createNavBar(pages) {
-  let navbar = document.createElement("ul");
+  const navbar = document.createElement("ul");
   navbar.classList.add("navbar-nav");
 
   for (let page of pages) {
@@ -24,7 +24,7 @@ function createNavBar(pages) {
 }
 
 function createNavItem(page) {
-  let navItem = document.createElement("li");
+  const navItem = document.createElement("li");
   navItem.classList.add("nav-item");
 
   const links = createNavLink(page);
@@ -35,7 +35,7 @@ function createNavItem(page) {
 }
 
 function createNavLink(page) {
-  let links = document.createElement("a");
+  const links = document.createElement("a");
 
   links.setAttribute("data-id", `${page}`);
   links.classList.add("nav-links");
@@ -45,7 +45,7 @@ function createNavLink(page) {
 }
 
 function createBrand(brandName) {
-  let brand = document.createElement("h1");
+  const brand = document.createElement("h1");
   brand.textContent = brandName;
   brand.classList.add("logo");
 

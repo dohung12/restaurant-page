@@ -4,6 +4,7 @@ import { createHomepage } from "./home";
 import { createContactPage } from "./contact";
 import { createMenuPage } from "./menu";
 import { switchTabs } from "./switch-tab";
+
 const brandName = "Aslasic";
 const pages = ["home", "menu", "contact"];
 
@@ -19,9 +20,9 @@ const menuPage = createMenuPage();
 menuPage.classList.add("hide-page");
 content.appendChild(menuPage);
 
-const contact = createContactPage(brandName);
-contact.classList.add("hide-page");
-content.appendChild(contact);
+const contactPage = createContactPage(brandName);
+contactPage.classList.add("hide-page");
+content.appendChild(contactPage);
 
 switchTabs();
 
